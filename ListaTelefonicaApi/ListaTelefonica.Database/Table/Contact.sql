@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Contact]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
+	[Name] VARCHAR(50) NOT NULL,
+	[PhoneNumber] VARCHAR(11) NOT NULL,
+	[CarrierId] INT NOT NULL FOREIGN KEY REFERENCES [dbo].[Carrier]([Id])
+)
